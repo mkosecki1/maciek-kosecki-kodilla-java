@@ -22,16 +22,16 @@ public class TestingMain {
         Calculator calc = new Calculator();
         int addResult = calc.addAToB(1,1);
         if (addResult == 2){
-            System.out.println("\nCalculator addAToB test OK");
+            System.out.println("\nCalculator method addAToB test OK");
         } else {
-            System.out.println("\nCalculator addAToB test FALSE");
+            System.out.println("\nCalculator method addAToB test FALSE");
         }
         Calculator calc2 = new Calculator();
         int substractResult = calc2.substractAFromB(1,1);
         if (substractResult == 0){
-            System.out.println("Calculator substractAFromB test OK");
+            System.out.println("Calculator method substractAFromB test OK");
         } else {
-            System.out.println("Calculator substractAFromB test FALSE");
+            System.out.println("Calculator method substractAFromB test FALSE");
         }
     }
 }
