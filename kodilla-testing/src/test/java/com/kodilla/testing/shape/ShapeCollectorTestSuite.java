@@ -15,21 +15,21 @@ public class ShapeCollectorTestSuite {
         shapeCollector.addFigure(square);
 
         //Then
-        Assert.assertEquals(1,shapeCollector.showFigures());
+        Assert.assertEquals(1,shapeCollector.showFigures().size());
     }
     @Test
     public void testRemoveFigure(){
         //given
         Triangle triangle = new Triangle("first triangle", 2.0,3.0);
         ShapeCollector shapeCollector = new ShapeCollector(triangle);
-        shapeCollector.addFigure(triangle);
+
 
         //When
         boolean result = shapeCollector.removeFigure(triangle);
 
         //Then
         Assert.assertTrue(result);
-        Assert.assertEquals(0,shapeCollector.showFigures());
+        Assert.assertEquals(0,shapeCollector.showFigures().size());
     }
     @Test
     public void testGetFigure(){
