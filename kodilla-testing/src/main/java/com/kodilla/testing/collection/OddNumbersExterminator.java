@@ -1,11 +1,10 @@
 package com.kodilla.testing.collection;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 class OddNumbersExterminator {
 
-    public void exterminate(ArrayList<Integer> numbers){
+    public ArrayList<Integer> exterminate(ArrayList<Integer> numbers){
         int tempValue = 0;
         for (int i=0; i<numbers.size(); i++){
             tempValue = numbers.get(i);
@@ -14,6 +13,7 @@ class OddNumbersExterminator {
             }
         }
 
+        return numbers;
     }
 
     public static void main(String[] args) {
@@ -33,7 +33,6 @@ class OddNumbersExterminator {
         }
         OddNumbersExterminator throwOdd = new OddNumbersExterminator();
         throwOdd.exterminate(mainList);
-        System.out.println("get:" + mainList.get(2));
 
     }
 

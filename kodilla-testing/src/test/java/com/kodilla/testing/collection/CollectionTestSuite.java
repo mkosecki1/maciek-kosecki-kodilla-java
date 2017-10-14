@@ -1,12 +1,8 @@
 package com.kodilla.testing.collection;
 
-import com.kodilla.testing.collection.OddNumbersExterminator;
 import org.junit.*;
-
+import com.kodilla.testing.collection.OddNumbersExterminator;
 import java.util.ArrayList;
-
-import static org.junit.Assert.*;
-
 public class CollectionTestSuite {
 
     @Before
@@ -17,33 +13,56 @@ public class CollectionTestSuite {
     public void after(){
         System.out.println("Test case end");
     }
-    @BeforeClass
-    public void beforeClass(){
-        System.out.println("Test suite begin");
-    }
-    @AfterClass
-    public void afterClass(){
-        System.out.println("Test suite end");
-    }
+    //@BeforeClass
+    //public void beforeClass(){
+    //    System.out.println("Test suite begin");
+    //}
+    //@AfterClass
+    //public void afterClass(){
+    //   System.out.println("Test suite end");
+    //}
+
     @Test
     public void testOddNumbersExterminatorEmptyList(){
         //Given
-        ArrayList<Integer> test1List = new ArrayList<>();
+        ArrayList input = new ArrayList<>();
+
         //When
-        test1List = null;
+        OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+        ArrayList<Integer> output = oddNumbersExterminator.exterminate(input);
+
         //Then
-        assertEquals(test1List.size());
+        Assert.assertTrue(output.isEmpty());
     }
     @Test
-    public void testOddNumbersExterminatorNormalList(){
-       //Given
-       ArrayList<Integer> testList = new ArrayList<>();
-       //When
-       testList.add(0);
-       testList.add(1);
-       //Then
-       assertEquals(testList.get(0),0);
-       assertEquals(testList.get(1),1);
+    public void testOddNumbersExterminatorNormalList() {
+        //Given
+        ArrayList input = new ArrayList<>();
 
+        //When
+        OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
+        ArrayList<Integer> output = oddNumbersExterminator.exterminate(input);
+        for (int n=0; n<10;n++){
+            output.get(n);
+        }
+
+        //Then
+        Assert.assertArrayEquals(output, numbers);
     }
+    //@Test
+    //public void testOddNumbersExterminatorNormalList(){
+       //Given
+       //ArrayList<Integer> testList = new ArrayList<>();
+       //When
+       //testList.add(0);
+       //testList.add(1);
+       //Then
+       //assertEquals(testList.get(0),0);
+       //assertEquals(testList.get(1),1);
+
 }
+
+
+
+
+
