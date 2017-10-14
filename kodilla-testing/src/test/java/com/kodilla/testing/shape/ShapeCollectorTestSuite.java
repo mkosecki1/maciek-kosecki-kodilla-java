@@ -23,7 +23,6 @@ public class ShapeCollectorTestSuite {
         Triangle triangle = new Triangle("first triangle", 2.0,3.0);
         ShapeCollector shapeCollector = new ShapeCollector(triangle);
 
-
         //When
         boolean result = shapeCollector.removeFigure(triangle);
 
