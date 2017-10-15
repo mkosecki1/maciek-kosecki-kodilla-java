@@ -13,14 +13,14 @@ public class CollectionTestSuite {
     public void after(){
         System.out.println("Test case end");
     }
-    //@BeforeClass
-    //public void beforeClass(){
-    //    System.out.println("Test suite begin");
-    //}
-    //@AfterClass
-    //public void afterClass(){
-    //   System.out.println("Test suite end");
-    //}
+    @BeforeClass
+    public static void beforeClass(){
+        System.out.println("Test suite begin");
+    }
+    @AfterClass
+    public static void afterClass(){
+        System.out.println("Test suite end");
+    }
 
     @Test
     public void testOddNumbersExterminatorEmptyList(){
@@ -37,28 +37,24 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorNormalList() {
         //Given
-        ArrayList input = new ArrayList<>();
+        ArrayList<Integer> input = new ArrayList<>();
+        input.add(1);
+        input.add(2);
+        input.add(3);
+        input.add(4);
+        input.add(5);
 
         //When
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         ArrayList<Integer> output = oddNumbersExterminator.exterminate(input);
-        for (int n=0; n<10;n++){
-            output.get(n);
-        }
 
         //Then
-        Assert.assertArrayEquals(output, numbers);
+        for (int n = 0; n < output.size(); n++){
+            int temp = output.get(n);
+            Assert.assertTrue(temp % 2 == 0);
+        }
+
     }
-    //@Test
-    //public void testOddNumbersExterminatorNormalList(){
-       //Given
-       //ArrayList<Integer> testList = new ArrayList<>();
-       //When
-       //testList.add(0);
-       //testList.add(1);
-       //Then
-       //assertEquals(testList.get(0),0);
-       //assertEquals(testList.get(1),1);
 
 }
 
