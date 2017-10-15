@@ -12,22 +12,21 @@ public class ShapeCollector {
     }
 
     public void addFigure(Shape shape){
-        // do nothing
+        figures.add(shape);
 
     }
 
     public boolean removeFigure(Shape shape){
-        // return true temporarily
+        figures.remove(shape);
         return true;
     }
 
     public Shape getFigure(int n){
-        // returning null means that the operation was unsuccessful
-        return null;
+        return figures.get(n);
     }
 
     public ArrayList<Shape> showFigures(){
-        // do nothing
+        return figures;
     }
 
     public Shape getShape() {

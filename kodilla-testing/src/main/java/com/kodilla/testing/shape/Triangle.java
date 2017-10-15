@@ -14,13 +14,12 @@ public class Triangle implements Shape{
 
     @Override
     public String getShapeName() {
-        // do nothing
+        return name;
     }
 
     @Override
     public double getField() {
-        // return 5 temporarily
-        return 5;
+        return (side * height)/2;
     }
 
     @Override
