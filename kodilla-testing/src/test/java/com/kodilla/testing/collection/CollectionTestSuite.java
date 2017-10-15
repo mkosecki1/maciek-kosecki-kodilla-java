@@ -24,11 +24,6 @@ public class CollectionTestSuite {
 
         System.out.println("Test suite begin");
     }
-    //@AfterClass
-   // public static void afterClass(){
-     //   System.out.println("Test suite end");
-
-    }
 
     @Test
     public void testOddNumbersExterminatorEmptyList(){
