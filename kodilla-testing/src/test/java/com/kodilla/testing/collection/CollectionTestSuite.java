@@ -15,19 +15,19 @@ public class CollectionTestSuite {
     }
     @BeforeClass
     public static void beforeClass(){
-<<<<<<< HEAD
+
        System.out.println("Test suite begin");
     }
     @AfterClass
     public static void afterClass(){
        System.out.println("Test suite end");
-=======
+
         System.out.println("Test suite begin");
     }
-    @AfterClass
-    public static void afterClass(){
-        System.out.println("Test suite end");
->>>>>>> zadanie_6_4
+    //@AfterClass
+   // public static void afterClass(){
+     //   System.out.println("Test suite end");
+
     }
 
     @Test
