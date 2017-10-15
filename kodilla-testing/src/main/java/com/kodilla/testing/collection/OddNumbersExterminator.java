@@ -20,7 +20,7 @@ class OddNumbersExterminator {
     public static void main(String[] args) {
 
         ArrayList<Integer> mainList = new ArrayList<Integer>();
-            for (int n = 0; n < 1; n++) {
+        for (int n = 0; n < 1; n++) {
             mainList.add(0);
             mainList.add(1);
             mainList.add(2);
