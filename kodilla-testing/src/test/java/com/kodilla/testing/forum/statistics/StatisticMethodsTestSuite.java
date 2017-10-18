@@ -83,8 +83,8 @@ public class StatisticMethodsTestSuite {
 
         //Then
         Assert.assertEquals(250.0, statisticMethods.getAveragePostsPerUser(),0.0);
-        Assert.assertEquals(2.0, statisticMethods.getAverageCommentsPerUser(),2.0);
-        Assert.assertEquals(2.0, statisticMethods.getAverageCommentsPerPost(),2.0);
+        Assert.assertEquals(0.0, statisticMethods.getAverageCommentsPerUser(),0.0);
+        Assert.assertEquals(0.0, statisticMethods.getAverageCommentsPerPost(),0.0);
     }
 
     @Test
