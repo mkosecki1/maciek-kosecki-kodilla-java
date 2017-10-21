@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 //Dla zadań 7.1. i 7.2
 
-public class copy_Of_StreamMain {
+public class CopyOfStreamMain {
 
     public static void main(String[] args) {
         Processor processor = new Processor();
