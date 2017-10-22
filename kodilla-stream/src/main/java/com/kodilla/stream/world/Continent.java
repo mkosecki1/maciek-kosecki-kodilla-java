@@ -16,6 +16,10 @@ public final class Continent {
         this.continent = continent;
     }
 
+    public String getContinent() {
+        return continent;
+    }
+
     public List<Country> getCountries() {
         return countries;
     }
