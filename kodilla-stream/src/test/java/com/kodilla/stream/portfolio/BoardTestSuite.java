@@ -151,7 +151,8 @@ public class BoardTestSuite {
                 .filter(sumOfTaskList::contains)
                 .flatMap(tl -> tl.getTasks().stream())
                 .mapToDouble(n->Period.between(n.getCreated(),LocalDate.now()).getDays())
-                .average();
+                .average()
+                .getAsDouble();
 
         //Then
         Assert.assertEquals(10.0,doubleTasks,0.00);
