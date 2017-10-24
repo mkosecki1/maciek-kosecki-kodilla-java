@@ -36,7 +36,7 @@ public class CopyOfStreamMain {
         expressionExecutor.executeExpression(3, 4, FunctionalCalculator::divideAByB);
 
         PoemBeautifier poemBeautifier = new PoemBeautifier();
-        poemBeautifier.beautify("\nfirst poem", (word)->word.toUpperCase());
+        poemBeautifier.beautify("\nfirst poem", word -> word.toUpperCase());
         poemBeautifier.beautify("first poem", (k) -> "ABC" +" "+k);
         poemBeautifier.beautify("first poem", (ko) -> "ABC");
         poemBeautifier.beautify("SECEND POEM", (ok) -> ok + " ABC");
