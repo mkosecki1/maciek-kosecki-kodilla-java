@@ -48,4 +48,5 @@ public final class ForumUser {
                 ", publishedPosts=" + publishedPosts +
                 '}';
     }
+
 }
