@@ -1,4 +1,6 @@
-package com.kodilla.good.patterns.challenges.challengeTwo;
+package com.kodilla.good.patterns.challenges.challengeTwo.order;
+
+import com.kodilla.good.patterns.challenges.challengeTwo.attributes.User;
 
 public class OrderDto {
     public User user;

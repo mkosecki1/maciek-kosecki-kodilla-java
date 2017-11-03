@@ -1,4 +1,7 @@
-package com.kodilla.good.patterns.challenges.challengeTwo;
+package com.kodilla.good.patterns.challenges.challengeTwo.order;
+
+import com.kodilla.good.patterns.challenges.challengeTwo.attributes.Product;
+import com.kodilla.good.patterns.challenges.challengeTwo.attributes.User;
 
 import java.time.LocalDateTime;
 
