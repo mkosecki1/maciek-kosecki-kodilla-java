@@ -1,8 +1,8 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.challengeTwo;
 
 import java.time.LocalDateTime;
 
-public class OrderRepositoryProduct implements OrderRepository{
+public class OrderProductRepository implements OrderRepository{
     @Override
     public void takeOrder(User user, Product product, LocalDateTime orderDate) {
     }

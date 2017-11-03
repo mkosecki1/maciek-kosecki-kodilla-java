@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.challengeTwo;
 
 import java.time.LocalDateTime;
 

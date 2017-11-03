@@ -1,11 +1,11 @@
-package com.kodilla.good.patterns.challenges;
+package com.kodilla.good.patterns.challenges.challengeTwo;
 
 import java.time.LocalDateTime;
 
 public class OrderRequest {
-    public User user;
-    public Product product;
-    public LocalDateTime orderDate;
+    private User user;
+    private Product product;
+    private LocalDateTime orderDate;
 
     public OrderRequest(final User user, final Product product, final LocalDateTime orderDate) {
         this.user = user;
