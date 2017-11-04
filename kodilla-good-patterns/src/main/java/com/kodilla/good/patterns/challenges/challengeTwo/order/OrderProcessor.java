@@ -1,5 +1,6 @@
 package com.kodilla.good.patterns.challenges.challengeTwo.order;
 
+import com.kodilla.good.patterns.challenges.challengeTwo.repository.OrderProductRepository;
 import com.kodilla.good.patterns.challenges.challengeTwo.repository.OrderRepository;
 import com.kodilla.good.patterns.challenges.challengeTwo.service.InformationService;
 import com.kodilla.good.patterns.challenges.challengeTwo.service.ProductOrderService;
@@ -7,10 +8,10 @@ import com.kodilla.good.patterns.challenges.challengeTwo.service.ProductOrderSer
 public class OrderProcessor {
     private InformationService informationService;
     private ProductOrderService orderService;
-    private OrderRepository orderRepository;
+    private OrderProductRepository orderRepository;
 
     public OrderProcessor(final InformationService informationService,
-                          final ProductOrderService orderService, final OrderRepository orderRepository) {
+                          final ProductOrderService orderService, final OrderProductRepository orderRepository) {
         this.informationService = informationService;
         this.orderService = orderService;
         this.orderRepository = orderRepository;
