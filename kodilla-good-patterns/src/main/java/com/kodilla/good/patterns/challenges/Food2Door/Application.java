@@ -10,15 +10,20 @@ import com.kodilla.good.patterns.challenges.Food2Door.suppliers.HealthyShop;
 public class Application {
     public static void main(String[] args){
         DeliveryRequest deliveryRequest = new DeliveryRequest(new ExtraFoodShop(), new Products("Tomato",10));
-        DeliveryProcessor deliveryProcessor = new DeliveryProcessor();
-        deliveryProcessor.deliver(deliveryRequest);
+        if(deliveryRequest.getProduct().getProductQuantity() != 0 || deliveryRequest.getProduct().getProductName() != null)  {
+            DeliveryProcessor deliveryProcessor = new DeliveryProcessor();
+            deliveryProcessor.deliver(deliveryRequest);
+        } else {
+            System.out.println("There is no name or quantity of product");
+        }
 
-        DeliveryRequest deliveryRequest2 = new DeliveryRequest(new GlutenFreeShop(), new Products("ss",1));
+        DeliveryRequest deliveryRequest2 = new DeliveryRequest(new GlutenFreeShop(), new Products("Gluten Free Soup",17));
         DeliveryProcessor deliveryProcessor2 = new DeliveryProcessor();
         deliveryProcessor2.deliver(deliveryRequest2);
 
-        DeliveryRequest deliveryRequest3 = new DeliveryRequest(new HealthyShop(), new Products("ss",1));
+        DeliveryRequest deliveryRequest3 = new DeliveryRequest(new HealthyShop(), new Products("onion",21));
         DeliveryProcessor deliveryProcessor3 = new DeliveryProcessor();
         deliveryProcessor3.deliver(deliveryRequest3);
+
     }
 }
