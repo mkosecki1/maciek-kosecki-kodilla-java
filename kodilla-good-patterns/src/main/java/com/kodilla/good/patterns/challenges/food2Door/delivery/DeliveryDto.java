@@ -1,7 +1,7 @@
-package com.kodilla.good.patterns.challenges.Food2Door.delivery;
+package com.kodilla.good.patterns.challenges.food2Door.delivery;
 
-import com.kodilla.good.patterns.challenges.Food2Door.attributes.Products;
-import com.kodilla.good.patterns.challenges.Food2Door.suppliers.Supplier;
+import com.kodilla.good.patterns.challenges.food2Door.attributes.Products;
+import com.kodilla.good.patterns.challenges.food2Door.suppliers.Supplier;
 
 public class DeliveryDto {
     private Supplier supplier;

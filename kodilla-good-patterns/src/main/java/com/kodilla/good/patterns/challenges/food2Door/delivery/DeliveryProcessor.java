@@ -1,6 +1,6 @@
-package com.kodilla.good.patterns.challenges.Food2Door.delivery;
+package com.kodilla.good.patterns.challenges.food2Door.delivery;
 
-import com.kodilla.good.patterns.challenges.Food2Door.suppliers.Supplier;
+import com.kodilla.good.patterns.challenges.food2Door.suppliers.Supplier;
 
 public class DeliveryProcessor {
     public DeliveryDto deliver(DeliveryRequest deliveryRequest){
