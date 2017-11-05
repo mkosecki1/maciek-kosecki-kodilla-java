@@ -1,11 +1,10 @@
 package com.kodilla.good.patterns.challenges.flights;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class FlightProcessor {
-    private final FlightsSet flightsSet = new HashSet<Flights>();
+    private final FlightsSet flightsSet = new FlightsSet();
 
     public Set<Flights> departureSearcher(String departure){
         Set<Flights> departureFlight = flightsSet.getFlightsSet().stream()
@@ -22,6 +21,7 @@ public class FlightProcessor {
     public Set<Flights> transferSearcher(String transfer){
         Set<Flights> transferFlight = flightsSet.getFlightsSet().stream()
                 .filter(n->n.getTransitCity().equals(transfer))
+                .filter(n->n != null)
                 .collect(Collectors.toSet());
         return transferFlight;
     }

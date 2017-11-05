@@ -5,6 +5,6 @@ public class ApplicationFlights {
         FlightProcessor flightProcessor = new FlightProcessor();
         System.out.println(flightProcessor.departureSearcher("Wrocław"));
         System.out.println(flightProcessor.arrivalSearcher("Wrocław"));
-        System.out.println(flightProcessor.transferSearcher("Wrocław"));
+        System.out.println(flightProcessor.transferSearcher("MM"));
     }
 }
