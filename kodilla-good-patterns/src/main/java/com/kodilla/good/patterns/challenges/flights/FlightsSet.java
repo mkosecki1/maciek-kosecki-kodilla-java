@@ -4,21 +4,19 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class FlightsSet {
-    private final Set<Flights> flightsSet;
+    private final Set<Flight> flightSet;
 
     public FlightsSet() {
-        flightsSet = new HashSet<>();
-        flightsSet.add(new Flights("Gdańsk","Wrocław", null));
-        flightsSet.add(new Flights("Wrocław","Gdańsk",null));
-        flightsSet.add(new Flights("Wrocław","Warszawa","Kraków"));
-        flightsSet.add(new Flights("Warszawa","Wrocław", "Kraków"));
-        flightsSet.add(new Flights("Kraków","Gdańsk",null));
-        flightsSet.add(new Flights("Gdańsk","Kraków",null));
-        flightsSet.add(new Flights("Kraków","Warszawa","Wrocław"));
-        flightsSet.add(new Flights("Warszawa","Kraków", "Wrocław"));
+        flightSet = new HashSet<>();
+        flightSet.add(new Flight("Gdańsk","Wrocław"));
+        flightSet.add(new Flight("Wrocław","Warszawa"));
+        flightSet.add(new Flight("Warszawa","Wrocław"));
+        flightSet.add(new Flight("Kraków","Gdańsk"));
+        flightSet.add(new Flight("Gdańsk","Kraków"));
+        flightSet.add(new Flight("Warszawa","Kraków"));
     }
 
-    public Set<Flights> getFlightsSet() {
-        return flightsSet;
+    public Set<Flight> getFlightSet() {
+        return flightSet;
     }
 }
