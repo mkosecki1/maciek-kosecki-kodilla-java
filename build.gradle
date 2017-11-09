@@ -29,4 +29,7 @@ dependencies {
 	//Test dependencies
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile ('junit:junit:4.12')
+    compile 'org.testng:testng:6.9.6'
+    compile 'org.junit.jupiter:junit-jupiter-api'
+	compile 'junit:junit:4.12'
 }
