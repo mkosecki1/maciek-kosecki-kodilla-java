@@ -1,7 +1,6 @@
-kodilla-testing/out/
-*/out
 .gradle
 /build/
+/maciek/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -25,9 +24,3 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/maciek/
-/out/
-
-gradle/
-src/main/resources/
-src/test/resources/
