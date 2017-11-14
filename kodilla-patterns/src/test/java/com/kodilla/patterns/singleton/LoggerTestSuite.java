@@ -5,7 +5,6 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class LoggerTestSuite {
-    private static Logger logger;
 
     @BeforeClass
     public static void openLoggerFile(){
