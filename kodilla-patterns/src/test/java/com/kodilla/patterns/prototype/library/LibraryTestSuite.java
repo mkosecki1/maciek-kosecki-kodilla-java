@@ -11,7 +11,8 @@ public class LibraryTestSuite {
     public void testGetBooks(){
         //Given
         Library library = new Library("Księgozbiór");
-        library.getBooks().add(new Book("Tytuł 1","Autor 1",LocalDate.of(1987,1,1)));
+        Book book1 = new Book("Tytuł 1","Autor 1",LocalDate.of(1987,1,1));
+        library.getBooks().add(book1);
         library.getBooks().add(new Book("Tytuł 2","Autor 2",LocalDate.of(2017,11,13)));
         library.getBooks().add(new Book("Tytuł 3","Autor 3",LocalDate.of(1999,7,22)));
 
@@ -32,9 +33,13 @@ public class LibraryTestSuite {
         }
 
         //When
+        library.getBooks().remove(book1);
+
         //Then
-        Assert.assertEquals(3, library.getBooks().size());
-        Assert.assertEquals(3, clonedLibrary.getBooks().size());
+        Assert.assertEquals(2, library.getBooks().size());
+        Assert.assertEquals(2, clonedLibrary.getBooks().size());
         Assert.assertEquals(3, deepClonedLibrary.getBooks().size());
+        Assert.assertEquals(library.getBooks().size(),clonedLibrary.getBooks().size());
+        Assert.assertNotEquals(library.getBooks().size(),deepClonedLibrary.getBooks().size());
     }
 }
