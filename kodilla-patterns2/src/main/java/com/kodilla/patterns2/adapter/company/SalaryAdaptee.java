@@ -10,7 +10,7 @@ import java.util.List;
 public class SalaryAdaptee implements SalaryProcessor{
     @Override
     public BigDecimal calculateSalaries(List<Employee> employees) {
-        CompanySalaryProcessor theProcessor = new CompanySalaryProcessor();
-        return theProcessor.calculateSalaries(employees);
+        CompanySalaryProcessor processor = new CompanySalaryProcessor();
+        return processor.calculateSalaries(employees);
     }
 }
