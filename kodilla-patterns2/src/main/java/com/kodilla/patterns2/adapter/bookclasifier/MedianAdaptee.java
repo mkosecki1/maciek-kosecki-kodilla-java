@@ -9,14 +9,14 @@ import java.util.Map;
 
 public class MedianAdaptee implements BookStatistics {
     @Override
-    public int averagePublicationYaer(Map<BookSignature, Book> books) {
-        Statistics theStatistics = new Statistics();
-        return theStatistics.averagePublicationYaer(books);
+    public int getAveragePublicationYaer(Map<BookSignature, Book> books) {
+        Statistics statistics = new Statistics();
+        return statistics.getAveragePublicationYaer(books);
     }
 
     @Override
-    public int medianPublicationYaer(Map<BookSignature, Book> books) {
-        Statistics theStatistics = new Statistics();
-        return theStatistics.medianPublicationYaer(books);
+    public int getMedianPublicationYaer(Map<BookSignature, Book> books) {
+        Statistics statistics = new Statistics();
+        return statistics.getMedianPublicationYaer(books);
     }
 }

@@ -7,8 +7,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MedianAdapterTestSuite {
+    private int mediana;
+
     @Test
-    public void publicationYearMedianTest() {
+    public void getMedianPpublicationYearTest() {
         //Given
         Set<Book> books = new HashSet<>();
         books.add(new Book("some author 1 ", "some book 1",1990,"00001"));
@@ -20,7 +22,7 @@ public class MedianAdapterTestSuite {
         MedianAdapter medianAdapter = new MedianAdapter();
 
         //When
-        int mediana = medianAdapter.publicationyearYearMedian(books);
+        mediana = medianAdapter.publicationYearMedian(books);
 
         //Then
         System.out.println("The median of books publication year is: " + mediana);

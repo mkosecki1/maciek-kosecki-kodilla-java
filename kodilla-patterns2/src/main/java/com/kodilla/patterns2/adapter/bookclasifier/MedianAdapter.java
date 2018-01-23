@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class MedianAdapter extends MedianAdaptee implements Classifier {
     @Override
-    public int publicationyearYearMedian(Set<Book> bookSet) {
+    public int publicationYearMedian(Set<Book> bookSet) {
         Map<BookSignature, com.kodilla.patterns2.adapter.bookclasifier.libraryb.Book> books = new HashMap<>();
         for (Book thatBook : bookSet){
             books.put(new BookSignature(thatBook.getSignature()),
@@ -19,6 +19,6 @@ public class MedianAdapter extends MedianAdaptee implements Classifier {
                             thatBook.getTitle(),
                             thatBook.getPublicationYear()));
         }
-        return medianPublicationYaer(books);
+        return getMedianPublicationYaer(books);
     }
 }
